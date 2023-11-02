@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440px, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{font-family: 'Hanken Grotesk', sans-serif;}
+   
+    #container{
+      display: flex;
+     max-width: 600px;
+     margin: 4rem auto;
+    }
+
+    .Results{
+      text-align: center;
+      border-radius: 15px;
+      max-width:300px;
+      color: white;
+      margin-left: 15px;
+      background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+    .descript{
+      padding: 10px 0;
+    }
+
+    .mini{
+      background-color:rgb(69, 8, 238);
+      width: 55%;
+      border-radius: 50%;
+      margin:0 auto;
+      padding: 35px 2px;
+    }
+
+    .mini h3{
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 800;
+    }
+    .mini p{
+      margin: 0;
+      color: rgb(167, 167, 167);
+    }
+
+    .mini-1 h4{
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+
+    .mini-1 p{
+      padding: 0 35px 15px 35px;
+      color: rgb(167, 167, 167);
+    }
+ 
+    .summary{
+      max-width: 350px;
+      padding-left:20px;
+      padding-right: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-color:hsl(0, 0%, 98%);
+        }
+     .summary h4{padding: 10px 20px;}
+    .min-sum{
+      display: flex;
+      margin: 10px;
+      width: 210px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: rgb(237, 237, 237);
+    }
+
+    .min-sum img{
+      width: 15px;
+      margin-left: 10px;
+    }
+
+    .min-sum h6{
+      font-size: 0.8rem;
+      margin-left: 5px;
+      margin-top: 1rem;
+    }
+
+    .min-sum p{
+      font-size: 0.8rem;
+      margin-left: 3.5rem;
+    }
+
+    button{
+      border: none;
+      color: white;
+      padding: 15px 80px;
+      background-color:rgb(112, 61, 252);
+     margin-top: 20px;
+      margin-left: 15px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    #one{
+      background-color: hsl(0, 100%, 97%);
+    }
+
+    #one h6{
+      color: hsl(0, 100%, 67%);
+    }
+
+    #two{
+      background-color: hsl(40, 92%, 95%);
+    }
+
+    #two h6{
+      color: hsl(39, 100%, 56%);
+    }
+
+    #three{
+      background-color: hsl(167, 58%, 94%);
+    }
+    #three h6{
+    color: hsl(166, 100%, 37%);
+    }
+    #four{
+      background-color: hsl(221, 100%, 96%);
+        }
+    #four h6{
+      color:hsl(234, 85%, 45%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+<div id="container">
+  <div class="Results">
+  <h3 class="descript">Your Result</h3>
+  <div class="mini">
+ <h3>76</h3> 
+ <p>of 100</p> 
+</div>
+<div class="mini-1">
+ <h4>Great</h4> 
+  <p>You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+</div>
+ <div class="summary">
+ <h4>Summary</h4> 
+ 
+<div class="min-sum" id="one">
+  <img src="./assets/images/icon-reaction.svg" alt="">
+ <h6>Reaction</h6> 
+ <p><strong>80 </strong>/ 100</p> 
+</div>
+
+<div class="min-sum" id="two">
+  <img src="./assets/images/icon-memory.svg" alt="">
+  <h6>Memory</h6>
+  <p><strong>92 </strong> / 100</p>
+</div>
+
+<div class="min-sum" id="three">
+  <img src="./assets/images/icon-verbal.svg" alt="">
+  <h6>Verbal</h6>
+ <p><strong>61</strong>/ 100</p> 
+</div>
+
+<div class="min-sum" id="four">
+  <img src="./assets/images/icon-visual.svg" alt="">
+  <h6>Visual</h6>
+  <p><strong>72 </strong>/ 100</p>
+</div>
+  <button>Continue</button>
+</div>
+</div>
+
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">WondaBwoy Kelvin</a>.
+  </div>
+</body>
+</html>
