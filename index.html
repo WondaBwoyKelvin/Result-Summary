@@ -100,8 +100,8 @@
       border: none;
       color: white;
       padding: 15px 80px;
-      background-color:rgb(112, 61, 252);
-     margin-top: 20px;
+      background-color:rgb(36, 23, 77);
+      margin-top: 20px;
       margin-left: 15px;
       border-radius: 20px;
       font-weight: 500;
@@ -137,6 +137,74 @@
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    /* Media queries */
+
+    @media screen and (max-width:600px){
+     *{
+      margin: 0;
+      padding:0;
+     }
+      #container{
+        max-width: 375px;
+       flex-direction: column;
+       margin: 0rem auto;
+      }
+      .descript{
+        padding:20px 0;
+      }
+
+      .Results{
+        border-radius: 0px;
+        max-width: 375px;
+        margin-left: 0px;
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+      }
+      .mini{
+        width: 45%;
+      }
+
+      .mini-1 h4{
+        padding: 15px 0;
+      }
+
+      .mini-1 p{
+      padding: 0 45px 35px 45px;
+      }
+
+      .summary{
+      max-width: 375px;
+      padding-left:20px;
+      padding-right: 0px;
+      margin: auto 10px;
+      }
+      .summary h4{
+        font-size: 1.180rem;
+      }
+     .min-sum{
+      width: 280px;
+     }
+
+     .min-sum p{
+      margin-top: 1rem;
+      margin-left: 8.5rem;
+     }
+     button{
+      font-size: 1.155rem;
+      border-radius: 30px;
+      padding: 12px 108px;
+      margin: 8px auto;
+     }
+
+     #three p{
+      margin-left: 9.2rem;
+     }
+    #four p{
+      margin-left: 9.3rem;
+    }
+    }
   </style>
 </head>
 <body>
